@@ -10,26 +10,58 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            background-color: rgb(246, 246, 245);
+
+        }
+        .Product-name{
+            float: right;
+            width:50%;
+
+        }
         .product{
-            display: flex;
             width: 50%;
-            background-color: antiquewhite;
-            height: 30vh;
+            background-color:white;
+            height: 40vh;
            margin-left: 30rem;
            padding: 20px;
+           box-shadow: 2px 2px 2px #ccc;
         }
         .img1{
             margin-top: 50px;
         }
-        .img1   img{
-            width:10%;
+        .img1  img{
+            width:20%;
+            height: 130px;
         }
-        /* .product-img {
-            display: flex;
-            width: 90%;
-        } */
-        .img1{
-            float: inline;
+        .img2  img{
+            width:27%;
+            height: 100px;
+        }
+        .product-img {
+            float:left;
+            width: 50%;
+
+        }
+        .Product-name h1{
+            padding: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Product-name p{
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button a{
+            background-color: rgba(250, 124, 56);
+            padding: 15px 35px;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+
+        }
+        .button{
+            padding: 20px;
         }
     </style>
 </head>
@@ -38,33 +70,27 @@
         <div class="product">
             <div class="product-img">
                 <div class="img1">
-                    <img src="images/bargar.png" alt="">
-                    <img src="images/bargar.png" alt="">
-                    <img src="images/bargar.png" alt="">
-                    <img src="images/bargar.png" alt="">
+                    <img src="images/order.png" alt="">
+                    <img src="images/order1.png" alt="">
+                    <img src="images/cupcake.jpg" alt="">
+                    <img src="images/icecream.png" alt="">
                 </div>
-                <div class="img1">
-                   
-                </div>
-                <div class="img1">
+                <div class="img2">
                     <img src="images/bargar.png" alt="">
+                    <img src="images/peastry.png" alt="">
+                    <img src="images/order1.png" alt="">
                 </div>
-                <div class="img1">
-                    <img src="images/bargar.png" alt="">
-                </div>
-                <div class="img1">
-                    <img src="images/bargar.png" alt="">
-                </div>
-                <div class="img1">
-                    <img src="images/bargar.png" alt="">
-                </div>
+                <h1 style="font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif; padding: 20px  0px;">Customer Reviews</h1>
+
             </div>
             <div class="Product-name">
-                <h2>Product Name </h2>
-                <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Qui cumque accusantium soluta nam facere nemo animi accusamus esse earum eveniet odit nihil facilis temporibus,
+                <h1>Product Name </h1>
+                <p>Description Lorem ipsum dolor sit amet  elit.
+                    Qui cumque accusantium soluta nam  eveniet odit nihil facilis temporibus,
                      neque sed maiores tenetur! Repellendus, neque?</p>
-                     <p style="color:orange ; padding: 20px;">$99.99</p>
+                     <h2 style="color:rgb(250, 124, 56) ; padding:20px;  font-family: Arial, Helvetica, sans-serif;">$99.99</h2>
+                    <div class="button"><a href="#">Add to Cart</a></div>
             </div>
         </div>
     
