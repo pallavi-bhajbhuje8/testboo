@@ -4,83 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-        body{
+        *{
             margin: 0;
             padding: 0;
-            background-image: url("images/portfolio5.jpg");
-            background-position: cover;
-            background-size: 100% 100%;
-            width: 100%;
-            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
         }
-        .welcome{
-            text-align: center;
-            margin-top: 100px;
-            color: black;
+        body{
+            background-image: url("images/hacker.png");
+            background-repeat: no-repeat;
+            background-position:cover;
+            background-size:100% 100%;
+            width:80%;
+            height:calc(100vh - 10px);
+           
         }
-        .cards1{
-            background-color: white;
+        .logo i{
+            color: white;
+            font-size: 30px;
+             /* margin:80px  0px  0px  80px; */
+             float:right;    
+            margin: 80px  50px  0px 0px;
+           
+            
+        }
+        .logo{
+            width: 30%;
+            float:left;  
+        }
+         .heading{
+          height: 20vh; 
+
+        } 
+        .nav {
+            float:right;
             width: 25%;
-            height: 35vh;
-            margin: 20px;
+           
+           
         }
-        .cards1 img{
-            width: 50%;
-            margin: 20px; 
+        .nav ul {
+            display: flex;
+            justify-content: space-evenly;
         }
-        .cards1{
-            text-align: center;
+        ul li{
+            list-style-type: none; 
+            margin-top: 80px;
+            padding-left:30px;
+                      
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+           
+            
+        }
+        .html-icon i{
+            color: white;
+            font-size: 110px;
           
+            
+            /* float: right; */
         }
-        .cards{
+        .html-icon{
+            /* text-align: center; */
+            width: 100%;
+             margin-left:10rem;
+            height: 25vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+        }
+        input{
+         padding: 20px  30px;
+         width: 23%;
+         margin-left: 20rem;
+         border-radius: 30px;
+         background-color:rgba(249, 245, 214, 0.2);
+         border: none;
+         color: white;
+         font-size: 15px;
+         
+        }
+        form{
+            position: relative;
+        }
+        form .user{
+            position: absolute;
+            right: 51%;
+            top: 20px;
+            padding-left: 30px;
+        }
+        form .clock{
+            position: absolute;
+            right: 51%;
+            top:46%;
+            padding-left: 30px;
         }
         .button{
-            text-align: center;
-            margin: 30px;
-           
+         padding: 20px;
+         width: 100%;
+         text-align: center;
+         margin-left:8rem;
+         
         }
         .button a{
-            background-color:rgb(109, 108, 108);
-            text-decoration:none;
+            text-decoration: none;
+            padding: 20px  9rem;
+            border-radius: 30px;
             color: white;
-            padding: 10px  20px;
            
         }
+        .keep-log{
+            width: 60%;
+            float: left;
+            color: rgb(131, 121, 121);
+            
+        }
+        .forget{
+            width: 40%;
+            float: right;
+            color: rgb(131, 121, 121);
+            
+
+        }
+        .sicuritity-term{
+        
+            text-align: center;
+        }
+        .terms-conditon{
+            float: left;
+            width: 100%;
+            text-align: center;
+        
+        }
+        .paragraph{
+            float: right;
+            width: 100%;
+        }
+        .paragraph p{
+            margin: 0rem  1rem  5rem  50rem;
+        }
+        .terms-conditon ul{
+            display: flex;
+            margin-left: 20rem;
+        }
+        .terms-conditon ul a{
+            text-decoration: none;
+        }
+
+
     </style>
 </head>
 <body>
     <header>
-        <div class="welcome">
-        <h1>Welcome to Ferns and Petals</h1>
-        <p>Your destrination for beautiful flowers and gifts!</p>
-        </div>
-
-        <div class="cards">
-            <div class="cards1">
-                <img src="images/bargar.png" alt="">
-                <h2 style="text-align: center;">Fresh Flowers</h2>
-                <p>Lorem ipsum doloribus aliquam nam labore nemo.  nam labore nemo.</p>
+        <div class="heading">
+            <div class="logo">
+                <i class="fa fa-key" aria-hidden="true"><span style="font-weight:bold ;"> Key</span></i>
             </div>
-            <div class="cards1">
-                <img src="images/bargar.png" alt="">
-                <h2 style="text-align: center;">Git ltems</h2>
-                <p>Lorem ipsum doloribus aliquam nam labore nemo.  nam labore nemonam labore nemo.</p>
-            </div>
-            <div class="cards1">
-                <img src="images/bargar.png" alt="">
-                <h2 style="text-align: center;">Fast Delivery</h2>
-                <p>Lorem ipsum doloribus aliquam nam labore nemo.  nam labore nemo.ipsum doloribus aliquam nam labore nemo</p>
+            <div class="nav">
+                <ul>
+                    <li style="  background-color: rgba(105, 105, 104, 0.5) ; padding:10px  25px;"> <a href="">Login</a></li>
+                    <li style="margin-top: 87px;"> <a href="">About Us</a></li>
+                    <li style="margin-top: 87px;"> <a href="">Register</a></li>
+                    <li style="margin-top: 87px;"> <a href="">Contact</a></li>
+                </ul>
             </div>
         </div>
-            <div class="button">
-                <a href="">Shop Now</a>
-            </div>
     </header>
+    <div class="html-icon">
+        <i class="fa fa-html5" aria-hidden="true"></i>
+    </div>
+    <div class="form" style="text-align: center;">
+         <form action="">
+             <i class="fa fa-user  user" aria-hidden="true" style="color: white; margin-left: 30px;"></i><input type="text"  placeholder="     Username ">
+             <br><br>
+            <i class="fa fa-lock  clock" aria-hidden="true"  style="color: white; margin-left:30px;"></i><input type="text"  placeholder="       Password "><br><br>
+             <div class="button" ><a href="#" style="background-color:rgba(244, 32, 107) ; ">GET STARTED</a></div>
+         </form>
+            <div class="Logged">
+    
+         <div class="keep-log">
+             <p style="margin: 1rem  0rem   0rem  44rem; "><i class="fa fa-toggle-on"  style="color:rgba(253, 238, 238, 0.5); " aria-hidden="true"></i>  Keep Logged In</p><br><br>
+             <h3 style="margin: 1rem  0rem   0rem  44rem; ">CREATE ACCOUNT</h3>
+         </div>
+         <div class="forget">
+            <p style="margin: 1rem  27rem   0rem  0rem ;">Forgot Password?</p><br><br>
+            <h3 style=" margin: 1rem  27rem   0rem  0rem;">NEED HELP?</h3>
+        </div>
+                    
+        </div>
+    </div>
+    <div class="sicuritity-term">
+        <div class="terms-conditon">
+            <ul>
+                <li><a href="#"  style="color:rgb(116, 111, 111) ">About Us</a></li>
+                <li><a href="#"  style="color:rgb(116, 111, 111) ">Privacy Policy</a></li>
+                <li><a href="#"  style="color:rgb(116, 111, 111) ">Terms Of Use</a></li>
+
+            </ul>
+            <div class="paragraph">
+                <p style="color:rgb(116, 111, 111) ">2019 Key All Rights Reserved | Design By W3layouts</p>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
